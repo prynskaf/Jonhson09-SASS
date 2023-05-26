@@ -1,63 +1,47 @@
-body {
-  height: 100%;
-  width: 100%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(77, 25, 172) 35%, rgb(0, 212, 255) 100%);
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.foo {
-  padding: 40px 30px;
-  margin: 5% auto;
-  background: rgba(255, 166, 0, 0.789);
-  width: 500px;
-  border: 2px solid;
-  padding: 20px;
-  box-shadow: 5px 10px rgba(9, 0, 0, 0.7607843137);
-  font-family: arial;
-}
-.foo h1,
-.foo h2 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bolder;
-}
-.foo ul li {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 14px;
-  padding: 8px 20px;
-}
-.foo p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 14px;
-  padding: 20px 20px;
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/786220/pexels-photo-786220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: fixed;
 }
 
-a {
-  color: blue;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-  padding: 12px 20px;
-  background-color: white;
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 18% 100px;
 }
-a:hover {
+.container h1 {
   color: white;
-  border-left: blue;
+  font-size: 60px;
+  font-weight: bolder;
+  padding: 10px;
+}
+.container p {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+.container button {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.container button:hover {
   background-color: black;
-  padding: 20px 20px;
-  rotate: 30deg;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

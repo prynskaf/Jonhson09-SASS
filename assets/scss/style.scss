@@ -1,16 +1,10 @@
 // sass --watch assets/scss/style.scss:assets/css/style.css
-
+// http://127.0.0.1:3000/#
 
 // html {
 //     font-size: (12 / 16) * 1em;
 // }
 
-body {
-    height: 100%;
-    width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(77,25,172,1) 35%, rgba(0,212,255,1) 100%);
-}
 
 * {
     margin: 0;
@@ -18,61 +12,44 @@ body {
     box-sizing: border-box;
 }
 
-.foo {
-    padding: 40px 30px;
-    margin: 5% auto;
-    background: rgba(255, 166, 0, 0.789);
-    width: 500px;
-    border: 2px solid;
-    padding: 20px;
-    box-shadow: 5px 10px #090000c2;
-
-    font: {
-        family: arial;
-    }
-
-    h1,
-    h2 {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: bolder;
-    }
-
-    ul li {
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        color: white;
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-
-    p {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 14px;
-        padding: 20px 20px;
-    }
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/786220/pexels-photo-786220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: fixed;
 }
 
 
-a {
-    color: blue;
-    text-decoration: none;
-    transition: all 0.5s ease-in-out;
-    padding: 12px 20px;
-    background-color: white;
-
-    &:hover {
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 18% 100px;
+    h1{
         color: white;
-        border-left: blue;
-        background-color: black;
-        padding: 20px 20px;
-        rotate: 30deg;
+        font-size: 60px;
+        font-weight: bolder;
+        padding: 10px;
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+    }
+    button {
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+       transition: all 0.5s ease-in;
+        &:hover {
+         background-color: black;
+         color:white
+        }
     }
 }
